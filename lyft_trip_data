@@ -1,0 +1,26 @@
+SELECT * FROM trips; 
+SELECT * FROM riders; 
+SELECT * FROM cars; 
+
+# Simple CROSS JOIN riders and cars tables. Results set isn't useful. 
+
+SELECT riders.first, 
+  riders.last, 
+  cars.model 
+FROM riders, cars; 
+
+# Trip log 
+SELECT * 
+FROM trips 
+LEFT JOIN riders 
+ ON trips.rider_id = riders.id; 
+
+ SELECT trips.id, 
+  trips.date,
+  trips.type, 
+  trips.cost, 
+  riders.username, 
+  riders.rating
+FROM trips 
+LEFT JOIN riders
+ ON trips.rider_id = riders.id; 
