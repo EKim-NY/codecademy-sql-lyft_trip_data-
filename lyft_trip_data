@@ -1,3 +1,5 @@
+# Lyft Trip Data 
+
 SELECT * FROM trips; 
 SELECT * FROM riders; 
 SELECT * FROM cars; 
@@ -24,3 +26,4 @@ LEFT JOIN riders
 FROM trips 
 LEFT JOIN riders
  ON trips.rider_id = riders.id; 
+
