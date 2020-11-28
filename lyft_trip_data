@@ -54,3 +54,10 @@ WHERE total_trips < 500;
 SELECT COUNT(*) AS 'Active Cars'
 FROM cars 
 WHERE status = 'active'; 
+
+
+# Find the two cars with the greatest number of trips completed. 
+SELECT *  
+FROM cars
+ORDER BY trips_completed DESC 
+LIMIT 2; 
