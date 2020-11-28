@@ -45,3 +45,7 @@ FROM riders2;
 
 SELECT AVG(cost) AS AVG_COST_OF_A_TRIP
 FROM trips; 
+
+SELECT first, last, username, total_trips
+FROM riders
+WHERE total_trips < 500; 
