@@ -49,3 +49,8 @@ FROM trips;
 SELECT first, last, username, total_trips
 FROM riders
 WHERE total_trips < 500; 
+
+
+SELECT COUNT(id) AS 'Active Cars'
+FROM cars 
+WHERE status = 'active'; 
