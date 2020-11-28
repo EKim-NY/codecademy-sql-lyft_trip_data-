@@ -27,3 +27,17 @@ FROM trips
 LEFT JOIN riders
  ON trips.rider_id = riders.id; 
 
+# INNER JOIN 
+
+SELECT * 
+FROM trips 
+INNER JOIN cars 
+  ON trips.car_id = cars.id; 
+
+# Stack the data from riders table atop the riders2 table. 
+
+SELECT * 
+FROM riders 
+UNION 
+SELECT * 
+FROM riders2; 
